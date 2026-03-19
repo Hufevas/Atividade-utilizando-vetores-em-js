@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="vetor.css"> 
+    <title>Vetores em JavaScript - Lista de Números</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Vendas</h2>
+
+<input type="text" id="nome" placeholder="Nome do vendedor">
+<input type="number" id="valor" placeholder="Valor da venda">
+
+<button onclick="cadastrarVenda()">Cadastrar</button>
+<button onclick="removerUltimo()">Remover Último</button>
+<button onclick="limparTudo()">Limpar Tudo</button>
+
+<h2>Lista de Vendas</h2>
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Vendedor</th>
+            <th>Valor</th>
+            <th>Desconto</th>
+            <th>Valor Final</th>
+            <th>Data</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="tabelaVendas"></tbody>
+</table>
+
+   <script src="vetor.js"></script>
+</body>
+</html>

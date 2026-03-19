@@ -1,0 +1,144 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#nome {
+    width: 50%;
+}
+
+#valor {
+    width: 25%;
+}
+
+/* Botões gerais */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Botão cadastrar */
+button:nth-of-type(1) {
+    background: #28a745;
+    color: white;
+}
+
+button:nth-of-type(1):hover {
+    background: #218838;
+}
+
+/* Botão remover último */
+button:nth-of-type(2) {
+    background: #ffc107;
+}
+
+button:nth-of-type(2):hover {
+    background: #e0a800;
+}
+
+/* Botão limpar */
+button:nth-of-type(3) {
+    background: #6c757d;
+    color: white;
+}
+
+button:nth-of-type(3):hover {
+    background: #5a6268;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Cabeçalho */
+thead {
+    background: #28a745;
+    color: white;
+}
+
+th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Linhas */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra effect */
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover */
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Botão remover */
+td button {
+    background: #dc3545;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+td button:hover {
+    background: #c82333;
+}
+
+/* Mensagem vazio */
+td[colspan] {
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+/* Espaçamento entre inputs e botões */
+.container input,
+.container button {
+    margin-bottom: 10px;
+}
